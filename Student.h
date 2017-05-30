@@ -15,7 +15,7 @@ class Student
 		std::string m_lName;
 	public:
 		void AddGrade(int g);
-		Student();
+		Student(string SetFirstName,string SetLastName);
 		int getID();
 		int showStudent();
 		~Student();

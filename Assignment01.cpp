@@ -28,12 +28,11 @@ using namespace std;
 ////////////////////////////////////////////////////////////////////////////////////////
 void assignment01( void )
 {
-	
+	// Write your code below:
 	int capacity = 10;
-	int grades[];
+	int* grades= new int [capacity];
 	int counter = 0;
 
-	// Write your code below:
 	if(counter < capacity)
 	{
 		for( int i = 0; i< sizeof(capacity); i++)
@@ -46,6 +45,12 @@ void assignment01( void )
 	else if (counter >= capacity)
 	{
 		capacity = capacity + 10;
+		for( int i = 0; i< sizeof(capacity); i++)
+		{
+			grades[i]= i;
+			counter++;
+			cout << grades[i] << endl;
+		}
 
 	}
 	

@@ -25,7 +25,7 @@ void Legacy( void )
 	char c;
 	
 	scanf("%c", &c);
-	int stud;
+	/*int stud;
 	if(c == 'm' || c == 'M')
 	{
 		stud = 1;
@@ -33,9 +33,9 @@ void Legacy( void )
 	else
 	{
 		stud = 0;
-	}
+	}*/
 	//////////////////////////////////////////////////////////
-	int myArray[10];
+	/*int myArray[10];
 	int size1 = sizeof(int);
 	int size2 = sizeof(myArray);
 	switch (stud)
@@ -48,12 +48,9 @@ void Legacy( void )
 		break;
 	default:
 		break;
-	}
-	Student s;
-	for(int i = 0; i < 8; i++)
-	{
-		s.AddGrade(i); //= srandom;
-	}
+	}*/
+	Student s();
+	assignment01();
 	// Fill array with students.
 
 	//for(int i = 0; i < 10; i++)
@@ -62,7 +59,7 @@ void Legacy( void )
 	//	s[i].Debug();
 	//}
 
-	string fName;
+	char fName[256];
 	char lName[256];
 
 	cout<< "Please enter the Students first name." << endl;

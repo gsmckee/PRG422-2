@@ -17,6 +17,7 @@ void Student::Debug()
 int Student::getID()
 {
 	cout<< m_id << " is the Student ID"<< endl;
+	return m_id;
 }
 void Student::AddGrade(int g)
 {
@@ -35,13 +36,15 @@ void Student::SetLastName( string& lName )
 }
 
 
-Student::Student()
+Student::Student(string SetFirstName, string SetLastName)
 {
+	m_fName = SetFirstName;
+	m_lName = SetLastName;
 	m_counter= 0;
 	m_id;
 	m_capacity= 10;
 }
 Student:: ~Student()
 {
-
+	delete [];
 }

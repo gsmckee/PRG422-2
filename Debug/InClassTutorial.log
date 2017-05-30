@@ -1,14 +1,21 @@
-﻿Build started 5/26/2017 12:06:46 PM.
+﻿Build started 5/30/2017 12:22:48 PM.
      1>Project "C:\Users\CCSDuser\Desktop\CCSD\PRG422\PRG422\InClassTutorial.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Assignment01.cpp Student.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp Student.cpp UnitTest.cpp
+         UnitTest.cpp
          Student.cpp
-         Assignment01.cpp
-     1>c:\users\ccsduser\desktop\ccsd\prg422\prg422\assignment01.cpp(33): error C2133: 'grades' : unknown size
+     1>c:\users\ccsduser\desktop\ccsd\prg422\prg422\student.h(18): error C2061: syntax error : identifier 'string'
+     1>c:\users\ccsduser\desktop\ccsd\prg422\prg422\student.cpp(40): error C2511: 'Student::Student(std::string,std::string)' : overloaded member function not found in 'Student'
+                 c:\users\ccsduser\desktop\ccsd\prg422\prg422\student.h(8) : see declaration of 'Student'
+     1>c:\users\ccsduser\desktop\ccsd\prg422\prg422\student.cpp(49): error C2059: syntax error : ';'
+         Source.cpp
+     1>c:\users\ccsduser\desktop\ccsd\prg422\prg422\student.h(18): error C2061: syntax error : identifier 'string'
+     1>c:\users\ccsduser\desktop\ccsd\prg422\prg422\source.cpp(70): error C2228: left of '.SetFirstName' must have class/struct/union
+     1>c:\users\ccsduser\desktop\ccsd\prg422\prg422\source.cpp(74): error C2228: left of '.SetLastName' must have class/struct/union
+     1>c:\users\ccsduser\desktop\ccsd\prg422\prg422\source.cpp(75): error C2228: left of '.Debug' must have class/struct/union
          Generating Code...
-     1>c:\users\ccsduser\desktop\ccsd\prg422\prg422\student.cpp(20): error C4716: 'Student::getID' : must return a value
      1>Done Building Project "C:\Users\CCSDuser\Desktop\CCSD\PRG422\PRG422\InClassTutorial.vcxproj" (Build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:01.05
+Time Elapsed 00:00:01.74
