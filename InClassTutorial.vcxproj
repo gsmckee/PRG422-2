@@ -64,12 +64,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="A.h" />
+    <ClInclude Include="Assignment.hpp" />
     <ClInclude Include="Student.h" />
+    <ClInclude Include="Utilities.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="A.cpp" />
+    <ClCompile Include="Assignment01.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Student.cpp" />
+    <ClCompile Include="Utilities.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

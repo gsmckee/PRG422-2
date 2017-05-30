@@ -1,0 +1,14 @@
+﻿Build started 5/26/2017 12:06:46 PM.
+     1>Project "C:\Users\CCSDuser\Desktop\CCSD\PRG422\PRG422\InClassTutorial.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Assignment01.cpp Student.cpp
+         Student.cpp
+         Assignment01.cpp
+     1>c:\users\ccsduser\desktop\ccsd\prg422\prg422\assignment01.cpp(33): error C2133: 'grades' : unknown size
+         Generating Code...
+     1>c:\users\ccsduser\desktop\ccsd\prg422\prg422\student.cpp(20): error C4716: 'Student::getID' : must return a value
+     1>Done Building Project "C:\Users\CCSDuser\Desktop\CCSD\PRG422\PRG422\InClassTutorial.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.05

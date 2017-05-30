@@ -2,12 +2,13 @@
 #define CLASS_STUD
 
 #include <iostream>
+#include <string>
 
 class Student
 {
 	private:
 		int m_id;
-		int* grade;
+		int* m_grades;
 		int m_capacity;
 		int m_counter;
 		std::string m_fName;
@@ -19,6 +20,8 @@ class Student
 		int showStudent();
 		~Student();
 		void Debug();
+		void SetFirstName( std::string& fName );
+		void SetLastName( std::string& lName );
 		
 
 };

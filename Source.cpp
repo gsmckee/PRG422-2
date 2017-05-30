@@ -1,16 +1,20 @@
 #include "A.h"
 #include "Student.h"
+#include "Assignment.hpp"
 
 #include <cstdio>
 #include <cstring>
+#include <string>
 #include <array>
-#include <stdlib.h>
+#include <cstdlib>
 #include <process.h>
 
 // _CRT_SECURE_NO_WARNINGS
 using namespace std;
 
-int main(int argc, char* argv[])
+////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
+void Legacy( void )
 {
 	A a; // creating an object of type A
 	a.AddNumber(1);
@@ -45,35 +49,60 @@ int main(int argc, char* argv[])
 	default:
 		break;
 	}
-	Student s[10];
-	for(int i = 0; i < 10; i++)
+	Student s;
+	for(int i = 0; i < 8; i++)
 	{
-		printf( "\r\n\r\nPrinting info for student %i / 10\r\n", i );
-		Student();
-		s[i].Debug();
+		s.AddGrade(i); //= srandom;
 	}
+	// Fill array with students.
 
+	//for(int i = 0; i < 10; i++)
+	//{
+	//	printf( "\r\n\r\nPrinting info for student %i / 10\r\n", i );
+	//	s[i].Debug();
+	//}
+
+	string fName;
+	char lName[256];
+
+	cout<< "Please enter the Students first name." << endl;
+	//getline(cin, fName);
+	//cin.getline (fName,256);
+	scanf( "%s", fName );
+	cout << fName << endl;
+	s.SetFirstName( string( fName ) );
+	cout<< "Please enter the Students last name." << endl;
+	//cin.getline (lName,256);
+	scanf( "%s", lName );
+	s.SetLastName( string( lName ) );
+	s.Debug();
 	system("pause");
-
+}
+////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
+int main(int argc, char* argv[])
+{
+	//Legacy(  );
+	assignment01(  );
 	return 0;
 }
 
 //ExtendArrayInt(int **ptr, int old_cap, int new_cap) 
-//Testing the function.
+////Testing the function.
 //{
 //	int *temp= new int[old_cap]; 
-//  Allocate temp
+////  Allocate temp
 //	for(int i= 0; i< old_cap; i++) 
-//  Backing up
+////  Backing up
 //	{
 //		temp[i]= *ptr;
 //	}
 //	delete[] *ptr; 
-//  Clean mess
+////  Clean mess
 //	*ptr = new int[new_cap]; 
-//  Starting from clean slate
+////  Starting from clean slate
 //	for(int i = 0; i< old_cap; i++) 
-//  Recovery
+////  Recovery
 //	{
 //		*ptr[i]= temp[i];
 //	}
