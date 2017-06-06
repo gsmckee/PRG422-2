@@ -29,31 +29,46 @@ using namespace std;
 void assignment01( void )
 {
 	// Write your code below:
-	int capacity = 10;
-	int* grades= new int [capacity];
+	int old_cap = 10;
+	int new_cap = old_cap + 10;
+	int* grades= new int [old_cap];
+	int* temp = new int [old_cap];
 	int counter = 0;
+	cout << old_cap << endl;
+	//cout << temp << endl;
 
-	if(counter < capacity)
-	{
-		for( int i = 0; i< sizeof(capacity); i++)
-		{
-			grades[i]= i;
-			counter++;
-			cout << grades[i] << endl;
-		}
-	}
-	else if (counter >= capacity)
-	{
-		capacity = capacity + 10;
-		for( int i = 0; i< sizeof(capacity); i++)
-		{
-			grades[i]= i;
-			counter++;
-			cout << grades[i] << endl;
-		}
-
-	}
 	
+	for( int i = 0; i< old_cap; i++)
+	{
+		grades[i]= i;
+		counter++;
+		cout << grades[i] << endl;
+		if ( counter == old_cap)
+		{
+			for( int i = 0; i< old_cap; i++ )
+			{
+				temp[i] = grades[i];
+			}
+			delete [] grades;
+			grades = new int [new_cap];
+			
+			for( int i = 0; i< old_cap; i++ )
+			{
+				grades[i] = temp[i];
+			}
+			delete [] temp;
+		}
+	}
+
+
+	for( int i = 0; i< new_cap; i++)
+	{
+		//grades[i]= i;
+		//counter++;
+		cout << grades[i] << endl;
+	}
+	old_cap = old_cap + 10;
+	cout << old_cap << endl;
 	
 
 	return;

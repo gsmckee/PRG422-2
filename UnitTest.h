@@ -3,6 +3,7 @@
 
 #include <iostream>
 
+void Test_Extend_Array(void);
 
 #endif
 	

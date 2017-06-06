@@ -8,14 +8,15 @@ class Student
 {
 	private:
 		int m_id;
-		int* m_grades;
+		float* m_grades;
 		int m_capacity;
 		int m_counter;
 		std::string m_fName;
 		std::string m_lName;
 	public:
-		void AddGrade(int g);
-		Student(string SetFirstName,string SetLastName);
+		void AddGrade(float g);
+		Student(std::string SetFirstName,std::string SetLastName);
+		Student();
 		int getID();
 		int showStudent();
 		~Student();
