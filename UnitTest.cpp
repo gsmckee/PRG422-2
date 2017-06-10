@@ -1,5 +1,9 @@
 #include "UnitTest.h"
 #include "Utilities.h"
+#include "Vector.h"
+#include "String.h"
+
+#include <cstring>
 
 using namespace std;
 
@@ -19,4 +23,14 @@ void Test_Extend_Array(void)
 	for( int i = 0; i < new_cap; i++ )
 		cout << array[ i ] << endl;
 	delete [] array;
+}
+
+void Test_Template_ExtendArray(void)
+{
+
+}
+
+void Test_String(void)
+{
+	//String s1("Greg McKee");
 }

@@ -1,9 +1,10 @@
-#include "A.h"
+//#include "A.h"
 #include "Student.h"
 #include "Utilities.h"
+//#include "String.h"
 //#include "Assignment.hpp"
 #include "UnitTest.h"
-#include "Vector.h"
+//#include "Vector.h"
 
 
 #include <cstdio>
@@ -31,8 +32,8 @@ int main(int argc, char* argv[])
 	//}
 	//char extendArrYN;
 	//int g = srand (unsigned int )% 101;
-	char fName[256];
-	char lName[256];
+	/*char fName[256];
+	char lName[256];*/
 	//Student s(fName, lName);
 	Student s;
 
@@ -49,9 +50,12 @@ int main(int argc, char* argv[])
 		s.AddGrade(i);
 	}
 	s.Debug();
+
 	//Legacy(  );
 	//assignment01();
-	//Test_Extend_Array();
+	Test_Extend_Array();
+	/*String s1;*/
+	//s1.Unit_test();
 	system("pause");
 	return 0;
 }
