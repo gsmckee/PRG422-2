@@ -25,35 +25,28 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-	//bool extendArray = false;
-	//if(extendArrYN == 'y')
-	//{
-	//	extendArray = true;
-	//}
-	//char extendArrYN;
-	//int g = srand (unsigned int )% 101;
-	/*char fName[256];
-	char lName[256];*/
-	//Student s(fName, lName);
-	Student s;
+	char fName[256];
+	char lName[256];
+	Student s(fName, lName);
+	//Student s;
 
-	/*cout<< "Please enter the Students first name." << endl;
+	cout<< "Please enter the Students first name." << endl;
 	scanf( "%s", fName );
 	s.SetFirstName( string( fName ) );
 	cout<< "Please enter the Students last name." << endl;
 	scanf( "%s", lName );
-	s.SetLastName( string( lName ) );*/
+	s.SetLastName( string( lName ) );
 
 
-	for( float i= 0; i < 30.0f; i+=1.0f)
+	/*for( float i= 0; i < 30.0f; i+=1.0f)
 	{
 		s.AddGrade(i);
-	}
+	}*/
 	s.Debug();
 
 	//Legacy(  );
 	//assignment01();
-	Test_Extend_Array();
+	//Test_Extend_Array();
 	/*String s1;*/
 	//s1.Unit_test();
 	system("pause");
